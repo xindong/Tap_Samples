@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">friend</string>
+    <string name="online">上线</string>
+    <string name="activeGameOverlay">好友对话框</string>
+    <string name="inviteUserToGame">邀请好友</string>
+    <string name="queryFriendList">查询好友</string>
+    <string name="addFollow">添加关注</string>
+    <string name="queryFriendListByType">条件查询</string>
+</resources>

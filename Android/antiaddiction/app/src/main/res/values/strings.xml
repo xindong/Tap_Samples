@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">anti-addiction</string>
+    <string name="checkanti">检测防沉迷</string>
+    <string name="remaintime">获取剩余游戏时间</string>
+    <string name="userType">获取用户类型</string>
+</resources>
