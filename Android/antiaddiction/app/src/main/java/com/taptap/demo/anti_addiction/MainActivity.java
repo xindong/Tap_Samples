@@ -34,6 +34,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         remainTime.setOnClickListener(this);
         AntiAddictionKit.init(this, protectCallBack);
         AntiAddictionKit.checkState();
+
     }
 
     @Override
