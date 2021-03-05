@@ -1,52 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp">
 
-    <Button
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:id="@+id/online"
-        android:text="@string/online"
-        />
-    <Button
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/initSDK"
+            style="@style/RoundButton.Auto"
+            android:layout_width="0px"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            android:text="初始化SDK"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/teal_700"
+            app:rb_borderColor="@color/teal_700" />
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/online"
+            style="@style/RoundButton.Auto"
+            android:layout_width="0px"
+            android:layout_marginStart="18dp"
+            android:layout_weight="1"
+            android:text="@string/online"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/teal_700"
+            app:rb_borderColor="@color/teal_700" />
+
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/activeGameOverlay"
-        android:text="@string/activeGameOverlay"
-        />
-    <Button
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/set_richtext"
+            style="@style/RoundButton.Auto"
+            android:layout_width="0px"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            android:text="设置富信息"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/teal_700"
+            app:rb_borderColor="@color/teal_700" />
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/clear_richtext"
+            style="@style/RoundButton.Auto"
+            android:layout_width="0px"
+            android:layout_marginStart="18dp"
+            android:layout_weight="1"
+            android:text="清除富信息"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/teal_700"
+            app:rb_borderColor="@color/teal_700" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/inviteUserToGame"
-        android:text="@string/inviteUserToGame"
-        />
-    <Button
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/activeGameOverlay"
+            style="@style/RoundButton.Auto"
+            android:layout_width="0px"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            android:text="@string/activeGameOverlay"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/teal_700"
+            app:rb_borderColor="@color/teal_700" />
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/inviteUserToGame"
+            style="@style/RoundButton.Auto"
+            android:layout_width="0px"
+            android:layout_marginStart="18dp"
+            android:layout_weight="1"
+            android:text="@string/inviteUserToGame"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/teal_700"
+            app:rb_borderColor="@color/teal_700" />
+
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/queryFriendList"
-        android:text="@string/queryFriendList"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/addFollow"
-        android:text="@string/addFollow"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/queryFriendListByType"
-        android:text="@string/queryFriendListByType"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/addFollow"
+            style="@style/RoundButton.Auto"
+            android:layout_width="0px"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:text="@string/addFollow"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/teal_700"
+            app:rb_borderColor="@color/teal_700" />
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/queryFriendList"
+            style="@style/RoundButton.Auto"
+            android:layout_width="0px"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:text="@string/queryFriendList"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/teal_700"
+            app:rb_borderColor="@color/teal_700" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
 
 </LinearLayout>
