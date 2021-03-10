@@ -16,17 +16,17 @@ import com.taptap.sdk.TapTapSdk;
 public class MainActivity extends AppCompatActivity {
     private Button login;
     private CallBackManager callBackManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        login.findViewById(R.id.login);
+        login = findViewById(R.id.login);
 
         TapTapSdk.LoginSdkConfig config = new TapTapSdk.LoginSdkConfig();
         config.roundCorner = false;
         config.regionType = RegionType.CN;//标识为国际版，从2.5版本才开始支持
         TapTapSdk.sdkInitialize(getApplicationContext(), "client id", config);
-
 
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 
 
 }
